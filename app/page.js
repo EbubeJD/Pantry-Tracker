@@ -12,6 +12,7 @@ export default function Home() {
   const [open, setopen] = useState(false)
   const [itemname, setItemname] = useState("")
   const [searchTerm, setSearchTerm] = useState("")
+
   const updateInventory = async () => {
     const snapshot = query(collection(db, "inventory"))
     const docs = await getDocs(snapshot)
